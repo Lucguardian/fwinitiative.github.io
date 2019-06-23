@@ -27,8 +27,8 @@
     } else {
         answer = "4 partial actions/round";
     }
-    if (cM > 0 && tM > 0) {
-        answer = "Combatant modifier do not stack with talent modifier. Please recalculate actions."
+    if (wsM > 0 && tM > 0) {
+        answer = "Specialist modifier do not stack with talent modifier. Please recalculate actions."
     }
     console.log(answer);
     document.getElementById("actionsResult").value = answer;
