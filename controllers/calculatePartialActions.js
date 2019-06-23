@@ -3,11 +3,12 @@
     var iR = parseInt(document.getElementById("initiativeRoll").value);
     var wM = parseInt(document.getElementById("weaponModifier").value);
     var sM = parseInt(document.getElementById("spellModifier").value);
+    var aM = parseInt(document.getElementById("agilityModifier").value);
     var cM = parseInt(document.getElementById("combatantModifier").value);
     var wsM = parseInt(document.getElementById("wsModifier").value);
     var mM = parseInt(document.getElementById("magicModifier").value);
     var tM = parseInt(document.getElementById("talentModifier").value);
-    var total = iR + wM + sM + cM + wsM + mM + tM;
+    var total = iR + wM + sM + aM + cM + wsM + mM + tM;
     console.log(total);
     answer = "";
     if (total <= -10) {
