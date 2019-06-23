@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+		<title>FW Initiative Controller</title>
+		<link rel="shortcut icon" href="views/css/imagens/shortcut.ico">
+		<style type="text/css">
+
+		</style>
+        <link rel="stylesheet" type="text/css" href="views/css/loading.css" />
+		<!--<script>
+
+		</script>-->
+	</head>
+    
+    <body class="main-body">
+
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 style="font-size:50px">Initiative Controller</h1>
+                <h3>Insert the initiative roll</h3>
+                Initiative Roll: <input type="text" id="initiativeRoll" value="0"><br />
+                Weapon Modifier: <input type="text" id="weaponModifier" value="0"><br />
+                Spell Modifier: <input type="text" id="spellModifier" value="0"><br />
+                Combatant Modifier: <input type="text" id="combatantModifier" value="0"><br />
+                Specialist Modifier: <input type="text" id="wsModifier" value="0"><br />
+                Magic Modifier: <input type="text" id="magicModifier" value="0"><br />
+                Talent Modifier: <input type="text" id="talentModifier" value="0"><br />
+                <button onclick="calculateActions()">Calculate</button><br />
+                Number of actions: <output id="actionsResult"></output><br />
+            </div>
+        </div>
+
+        <script src="controllers/calculatePartialActions.js"></script>
+
+    </body>
+</html>
