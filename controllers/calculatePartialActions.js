@@ -11,19 +11,19 @@
     var total = iR + wM + sM + aM + cM + wsM + mM + tM;
     console.log(total);
     answer = "";
-    if (total <= -10) {
+    if (total <= -6) {
         answer = "1 partial action/2 rounds";
-    } else if (total <= -5 && total > -10) {
+    } else if (total <= -1 && total > -6) {
         answer = "1 partial action/round";
-    } else if (total <= 0 && total > -5) {
+    } else if (total <= 4 && total > -1) {
         answer = "3 partial actions/2 rounds";
-    } else if (total <= 5 && total > 0) {
+    } else if (total <= 9 && total > 4) {
         answer = "2 partial actions/round";
-    } else if (total <= 10 && total > 5) {
+    } else if (total <= 14 && total > 9) {
         answer = "5 partial actions/2 rounds";
-    } else if (total <= 15 && total > 10) {
+    } else if (total <= 14 && total > 10) {
         answer = "3 partial actions/round";
-    } else if (total <= 20 && total > 15) {
+    } else if (total <= 19 && total > 14) {
         answer = "7 partial actions/2 rounds";
     } else {
         answer = "4 partial actions/round";
