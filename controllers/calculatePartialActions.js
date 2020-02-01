@@ -21,9 +21,9 @@
         answer = "2 partial actions/round";
     } else if (total <= 14 && total > 9) {
         answer = "5 partial actions/2 rounds";
-    } else if (total <= 14 && total > 10) {
-        answer = "3 partial actions/round";
     } else if (total <= 19 && total > 14) {
+        answer = "3 partial actions/round";
+    } else if (total <= 24 && total > 19) {
         answer = "7 partial actions/2 rounds";
     } else {
         answer = "4 partial actions/round";
