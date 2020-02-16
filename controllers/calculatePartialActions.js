@@ -11,9 +11,9 @@
     var total = iR + wM + sM + aM + cM + wsM + mM + tM;
     console.log(total);
     answer = "";
-    if (total <= -6) {
+    if (total <= -6 && mM < 0) {
         answer = "1 partial action/2 rounds";
-    } else if (total <= -1 && total > -6) {
+    } else if (total <= -1 && total > -6 && mM < 0) {
         answer = "1 partial action/round";
     } else if (total <= 4 && total > -1) {
         answer = "3 partial actions/2 rounds";
@@ -25,8 +25,10 @@
         answer = "3 partial actions/round";
     } else if (total <= 24 && total > 19) {
         answer = "7 partial actions/2 rounds";
-    } else {
+    } else if (total > 24 && mM > 0) {
         answer = "4 partial actions/round";
+    } else {
+        answer = "Please fill all fields with numerci values.";
     }
     if (wsM > 0 && tM > 0) {
         answer = "Specialist modifier do not stack with talent modifier. Please recalculate actions."
