@@ -13,6 +13,10 @@
     answer = "";
     if (total <= -6 && mM < 0) {
         answer = "1 partial action/2 rounds";
+    } else if (total <= -6 && mM >= 0) {
+        answer = "3 partial actions/2 rounds";
+    } else if (total <= -1 && total > -6 && mM >= 0) {
+        answer = "3 partial actions/2 rounds";
     } else if (total <= -1 && total > -6 && mM < 0) {
         answer = "1 partial action/round";
     } else if (total <= 4 && total > -1) {
@@ -27,6 +31,8 @@
         answer = "7 partial actions/2 rounds";
     } else if (total > 24 && mM > 0) {
         answer = "4 partial actions/round";
+    } else if (total > 24 && mM <= 0) {
+        answer = "7 partial actions/2 rounds";
     } else {
         answer = "Please fill all fields with numeric values.";
     }
