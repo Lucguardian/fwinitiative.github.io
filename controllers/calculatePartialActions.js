@@ -39,6 +39,11 @@
     if (wsM > 0 && tM > 0) {
         answer = "Specialist modifier do not stack with talent modifier. Please recalculate actions."
     }
+    if (total > 20 && mM <= 0) {
+        total = 20
+    } else if (total < 0 && mM >= 0) {
+        total = 0
+    }
     console.log(answer);
     document.getElementById("actionsResult").value = answer;
     document.getElementById("initiativeResult").value = total.toString();
