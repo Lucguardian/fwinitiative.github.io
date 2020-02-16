@@ -28,11 +28,12 @@
     } else if (total > 24 && mM > 0) {
         answer = "4 partial actions/round";
     } else {
-        answer = "Please fill all fields with numerci values.";
+        answer = "Please fill all fields with numeric values.";
     }
     if (wsM > 0 && tM > 0) {
         answer = "Specialist modifier do not stack with talent modifier. Please recalculate actions."
     }
     console.log(answer);
     document.getElementById("actionsResult").value = answer;
+    document.getElementById("initiativeResult").value = total.toString();
 }
